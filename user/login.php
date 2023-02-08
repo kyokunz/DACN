@@ -37,7 +37,7 @@ setcookie ("userpassword","");
 $_SESSION['login']=$_POST['stuid'];
 echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
 } else{
-echo "<script>alert('Invalid Details');</script>";
+echo "<script>alert('Sai thông tin đăng nhập! Vui lòng thử lại');</script>";
 }
 }
 
@@ -46,7 +46,7 @@ echo "<script>alert('Invalid Details');</script>";
 <html lang="en">
   <head>
   
-    <title>Student Management System|| Student Login Page</title>
+    <title>Student Management System || Student Login Page</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -73,10 +73,10 @@ echo "<script>alert('Invalid Details');</script>";
                 <h4 style="text-align: center">Đăng nhập</h4>
                 <form class="pt-3" id="login" method="post" name="login">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" placeholder="enter your student id or username" required="true" name="stuid" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
+                    <input type="text" class="form-control form-control-lg" placeholder="nhập tài khoản" required="true" name="stuid" value="<?php if(isset($_COOKIE["user_login"])) { echo $_COOKIE["user_login"]; } ?>" >
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" placeholder="enter your password" name="password" required="true" value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>">
+                    <input type="password" class="form-control form-control-lg" placeholder="nhập mật khẩu" name="password" required="true" value="<?php if(isset($_COOKIE["userpassword"])) { echo $_COOKIE["userpassword"]; } ?>">
                   </div>
                   <div class="mt-3">
                     <button class="btn btn-success btn-block loginbtn" name="login" type="submit">Đăng nhập</button>

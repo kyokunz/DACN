@@ -12,7 +12,7 @@ if (strlen($_SESSION['sturecmsaid'] == 0)) {
     $query = $dbh->prepare($sql);
     $query->bindParam(':rid', $rid, PDO::PARAM_INT);
     $query->execute();
-    echo "<script>alert('Data deleted');</script>";
+    echo "<script>alert('Xóa thành công');</script>";
     echo "<script>window.location.href = 'manage-diem.php'</script>";
   }
 ?>

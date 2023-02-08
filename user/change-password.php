@@ -28,7 +28,7 @@ $chngpwd1->execute();
 
 echo '<script>alert("Mật khẩu của bạn đã được đổi")</script>';
 } else {
-echo '<script>alert("Mật khẩu đổi thất bại")</script>';
+echo '<script>alert("Đổi mật khẩu thất bại")</script>';
 
 }
 }
@@ -37,7 +37,7 @@ echo '<script>alert("Mật khẩu đổi thất bại")</script>';
 <html lang="en">
   <head>
    
-    <title>Student  Management System|| Student Change Password</title>
+    <title>Student Management System || Student Change Password</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">

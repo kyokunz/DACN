@@ -12,7 +12,7 @@ if (strlen($_SESSION['sturecmsstuid'] == 0)) {
 
   <head>
 
-    <title>Student Management System|| View Students Profile</title>
+    <title>Student Management System || View Students Profile</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">

@@ -76,8 +76,6 @@ include('includes/dbconnection.php');
                 <a href="user/login.php">Đăng nhập ngay<i class="glyphicon glyphicon-menu-right"> </i></a>
               </div>
             </li>
-
-
           </ul>
         </div>
       </div>

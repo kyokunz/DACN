@@ -19,9 +19,9 @@ if (isset($_POST['login'])) {
 
     if (!empty($_POST["remember"])) {
       //COOKIES for username
-      setcookie("user_login", $_POST["username"], time() + (10 * 365 * 24 * 60 * 60));
+      setcookie("user_login", $_POST["username"], time() + (60 * 60 * 24 * 30));
       //COOKIES for password
-      setcookie("userpassword", $_POST["password"], time() + (10 * 365 * 24 * 60 * 60));
+      setcookie("userpassword", $_POST["password"], time() + (60 * 60 * 24 * 30));
     } else {
       if (isset($_COOKIE["user_login"])) {
         setcookie("user_login", "");
@@ -52,13 +52,13 @@ if (isset($_POST['login'])) {
               <h4 style="text-align: center">Đăng nhập Admin</h4>
               <form class="pt-3" id="login" method="post" name="login">
                 <div class="form-group">
-                  <input type="text" class="form-control form-control-lg" placeholder="enter your username" required="true" name="username" value="<?php if (isset($_COOKIE["user_login"])) {
+                  <input type="text" class="form-control form-control-lg" placeholder="nhập tài khoản" required="true" name="username" value="<?php if (isset($_COOKIE["user_login"])) {
                                                                                                                                                       echo $_COOKIE["user_login"];
                                                                                                                                                     } ?>">
                 </div>
                 <div class="form-group">
 
-                  <input type="password" class="form-control form-control-lg" placeholder="enter your password" name="password" required="true" value="<?php if (isset($_COOKIE["userpassword"])) {
+                  <input type="password" class="form-control form-control-lg" placeholder="nhập mật khẩu" name="password" required="true" value="<?php if (isset($_COOKIE["userpassword"])) {
                                                                                                                                                           echo $_COOKIE["userpassword"];
                                                                                                                                                         } ?>">
                 </div>

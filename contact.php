@@ -6,7 +6,7 @@ include('includes/dbconnection.php');
 <!doctype html>
 <html>
 <head>
-<title>Student  Management System || Contact Us Page</title>
+<title>Student Management System || Contact Us Page</title>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--bootstrap-->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
@@ -48,7 +48,7 @@ include('includes/dbconnection.php');
 			<!-- container -->
 			<div class="container">
 				<div class="contact-info">
-					<h3 class="c-text">Rỗng</h3>
+					<h3 class="c-text">SMS hay Student Management System là hệ thống chuyên quản lý các thông tin liên quan đến sinh viên.</h3>
 				</div>
 				
 				<div class="contact-grids">
